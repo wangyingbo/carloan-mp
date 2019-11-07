@@ -1,0 +1,17 @@
+/* pages/customerDetail/index.wxss */
+.tab-color {
+  color: #1E72DA;
+}
+.card-wrap {
+  margin-top: 10rpx;
+}
+.cu-bar {
+  min-height: 75rpx !important;
+}
+.img-wrap {
+  margin-bottom: 0 !important;
+  margin-top: 10rpx;
+ }
+.img-item {
+  
+}

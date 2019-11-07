@@ -1,0 +1,31 @@
+<!--pages/message/message.wxml-->
+<scroll-view class="wrap" wx:if="{{messageList.length > 0}}">
+  <view class="cu-timeline" >
+    <view class='cu-item text-blue' wx:for="{{messageList}}" wx:key="index">
+      <view class="message-bg-color content shadow-blur">
+        <view class="cu-capsule radius text-white">
+          <view class="cu-tag bg-white text-blue">{{item.shortTitle}}</view>
+          <view class="cu-tag line-white">{{item.createTime}}</view>
+        </view>
+        <view class='margin-top-sm text-content text-white'>
+          <view>标题：{{item.title}}</view>
+          <view>内容：{{item.content}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='cu-load load-modal' wx:if="{{firstLoading}}">
+    <image src='/images/logo.jpg' class='png' mode='aspectFit'></image>
+    <view class='gray-text'>加载中...</view>
+  </view>
+  <van-notify id="van-notify"/>
+</scroll-view>
+<view class="no-data-view" wx:if="{{messageList.length === 0}}">
+  <view>
+    <view class="no-wrap">
+      <image class="no-image" src='/images/error-bg.png' mode='aspectFit'></image>
+      <view><text class="no-text">这里什么都没有~</text></view>
+    </view>
+  </view>
+</view>
+

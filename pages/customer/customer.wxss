@@ -1,0 +1,43 @@
+/* pages/customer/customer.wxss */
+.search-btn {
+  color: #fff;
+}
+.order-wrap{
+  margin-top: 100rpx;
+  overflow: hidden;
+}
+.order-item {
+  background: #fff;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+.customer-top {
+  color: #191919;
+  border-bottom: 1px solid #ededed;
+  padding: 20rpx;
+}
+.bottom-desc {
+  padding: 20rpx;
+}
+.right-desc {
+  color: #666666;
+}
+.icon-profile {
+  font-size: 25px;
+  color:#1E72DA;
+}
+.customer-name {
+  margin-left: 10rpx;
+}
+.bottom-btns {
+  display: flex;
+  justify-content: space-around;
+}
+.customer-btn-item {
+  margin-top: 0 !important;
+}
+.customer-action-btn {
+  color: #1E72DA !important;
+  box-shadow:6rpx 6rpx 8rpx #1E72DA;
+
+}

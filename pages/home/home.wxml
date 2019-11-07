@@ -1,0 +1,81 @@
+<!--pages/home/home.wxml-->
+<view >
+    <view class="grid col-4 grid-square top-menu text-center">
+      <view class='menu-item '>
+        <image class='home-icon' src='/images/icon-application.png'></image>
+        <view>
+          <text class='icon-bottom-text'>进件录入</text>
+        </view>
+      </view>
+       <view class='menu-item'>
+        <image class='home-icon' src='/images/icon-homeVisit.png'></image>
+        <view>
+          <text class='icon-bottom-text'>家访登记</text>
+        </view>
+      </view>
+       <view class='menu-item'>
+        <image class='home-icon' src='/images/icon-faceSign.png'></image>
+        <view>
+          <text class='icon-bottom-text'>面签合同</text>
+        </view>
+      </view>
+       <view class='menu-item'>
+        <image class='home-icon' src='/images/icon-finacing.png'></image>
+        <view>
+          <text class='icon-bottom-text'>融资确认</text>
+        </view>
+      </view>
+    </view>
+    <view class="grid col-3 grid-square mid-menu text-center">
+      <view class='menu-item '>
+        <image class='home-icon' src='/images/icon-creditApply.png'></image>
+        <view>
+          <text class='icon-bottom-text black-color'>征信申请</text>
+        </view>
+      </view>
+       <view class='menu-item'>
+        <image class='home-icon' src='/images/icon-applicationAddtion.png'></image>
+        <view>
+          <text class='icon-bottom-text black-color'>进件补录</text>
+        </view>
+      </view>
+       <view class='menu-item'>
+        <image class='home-icon' src='/images/icon-applyDeal.png'></image>
+        <view>
+          <text class='icon-bottom-text black-color'>审批处理</text>
+        </view>
+      </view>
+    </view>
+    <view class="grid col-3 grid-square mid-menu text-center">
+      <view class='menu-item '>
+        <image class='home-icon' src='/images/icon-collection.png'></image>
+        <view>
+          <text class='icon-bottom-text black-color'>催收登记</text>
+        </view>
+      </view>
+       <view class='menu-item'>
+        <image class='home-icon' src='/images/icon-electrionSign.png'></image>
+        <view>
+          <text class='icon-bottom-text black-color'>电子签名</text>
+        </view>
+      </view>
+       <view class='menu-item'>
+        <image class='home-icon' src='/images/icon-gpsInstall.png'></image>
+        <view>
+          <text class='icon-bottom-text black-color'>GPS安装</text>
+        </view>
+      </view>
+    </view>
+    <view class='customer-enter-btn'>
+      <navigator url='../customer/customer' hover-class='none'>
+        <button class='cu-btn block bg-blue margin-tb-sm lg ' >客户管理</button>
+      </navigator>
+    </view>
+    
+  
+  <view  class='wyb-test-view '>
+  <button class="wyb-test-btn" bindtap="wybButtonClick">测试</button>
+  </view> 
+
+  <van-notify id="van-notify" />
+  </view>

@@ -1,0 +1,10 @@
+<!--pages/about/about.wxml-->
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于me</view>
+  <view class='text-content'>
+    <view class='margin-top-sm'>岗位:前端开发工程师</view>
+     <view class='margin-top-sm'>坐标:杭州</view>
+     <view class='margin-top-sm'>联系方式:dajiadoujiaowosiyi@163.com</view>
+    <view class='margin-top-sm'>欢迎骚扰</view>
+  </view>
+</view>

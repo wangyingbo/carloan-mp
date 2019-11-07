@@ -1,0 +1,47 @@
+/* pages/home/home.wxss */
+.home-icon {
+  width: 150rpx;
+  height: 150rpx;
+}
+.top-menu {
+  background-color: #1E72DA;
+  padding:40rpx 0;
+}
+.icon-bottom-text {
+  width: 100%;
+  display: block;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  margin-top: -15rpx;
+}
+.menu-item {
+ overflow: visible !important;
+ padding-bottom:calc((100% - 60rpx)/4 + 2.5%) !important;
+ padding-top: 20rpx;
+}
+.mid-menu {
+  padding:20rpx 0;
+  background-color: #fff;
+}
+.black-color {
+  font-size: 28rpx !important;
+  color: #333333;
+}
+.customer-enter-btn {
+  width: 80%;
+  position: fixed;
+  bottom: 40rpx;
+  left: 10%;
+}
+
+.wyb-test-view {
+  margin-top: 20rpx;
+  height: 30rpx;
+  width: 150rpx;
+  bottom: 20rpx;
+  background-color:#1E72DA;
+}
+
+.wyb-test-btn {
+  color: red;
+}

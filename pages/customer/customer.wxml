@@ -1,0 +1,67 @@
+<!--pages/order/order.wxml-->
+<view>
+  <view class="cu-bar bg-white search fixed">
+    <view class='search-form round'>
+      <text class="icon-search"></text>
+      <input bindinput="searchValueOnChange" type="text" placeholder="输入客户姓名" confirm-type="search"></input>
+    </view>
+    <view class='action'>
+      <button bindtap="search" class='cu-btn bg-color shadow-blur round search-btn'>搜索</button>
+    </view>
+  </view>
+  <scroll-view class="order-wrap" wx:if="{{customerList.length > 0}}">
+    <navigator class="order-item" wx:for="{{customerList}}" wx:key url='../customerDetail/index?customerId={{item.customerId}}' hover-class='none'>
+      <view class="customer-top">
+        <text class='icon-profile'></text>
+        <text class="customer-name">客户：</text>
+        <text>{{item.customerName}} {{item.certNo || '暂无数据'}}</text>
+      </view>
+      <view class="bottom-desc">
+        <view>
+          <text class="left-desc">录入时间：</text>
+          <text class="right-desc">{{item._createTime || '暂无数据'}}</text>
+        </view>
+        <view>
+          <text class="left-desc">手机号码：</text>
+          <text class="right-desc">{{item.mobile || '暂无数据' }}</text>
+        </view>
+        <view>
+          <text class="left-desc">常住区域：</text>
+          <text class="right-desc">{{item.cityName || '暂无数据'}}</text>
+        </view>
+        <view>
+          <view class='right-desc text-cut' style='width:75%'>
+            <text class="left-desc">居住地址：</text>
+            {{item.address || '暂无数据'}}
+          </view>
+        </view>
+      </view>
+      <view class="bottom-btns">
+        <navigator class="customer-btn-item margin-tb-sm text-center" url='../customer/customer' hover-class='none'>
+          <button class='cu-btn round line-blue shadow customer-action-btn'>征信申请</button>
+        </navigator>
+        <navigator class="customer-btn-item margin-tb-sm text-center" url='../customer/customer' hover-class='none'>
+          <button class='cu-btn round line-blue shadow customer-action-btn' >编辑客户</button>
+        </navigator>
+        <navigator class="customer-btn-item margin-tb-sm text-center" url='../customer/customer' hover-class='none'>
+          <button class='cu-btn round line-blue shadow customer-action-btn' >互联网征信</button>
+        </navigator>
+      </view>
+    </navigator>
+  </scroll-view>
+  <view class='cu-load load-modal' wx:if="{{firstLoading}}">
+    <image src='/images/logo.jpg' class='png' mode='aspectFit'></image>
+    <view class='gray-text'>加载中...</view>
+  </view>
+  <van-notify id="van-notify"/>
+  <view class="no-data-view" wx:if="{{customerList.length === 0}}">
+    <view>
+      <view class="no-wrap">
+        <image class="no-image" src='/images/error-bg.png' mode='aspectFit'></image>
+        <view>
+          <text class="no-text">这里什么都没有~</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+/* pages/message/message.wxss */
+page {
+  min-height: 100%;
+  width: 100%;
+}
+.wrap {
+  background: #fff;
+}
+.message-bg-color {
+  background: #1E72DA;
+}
+.lines-white {
+  color: #1E72DA !important;
+}
+.line-white {
+  /*color: #1E72DA !important;*/
+}

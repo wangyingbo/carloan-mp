@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/about/about",
+    "pages/modifyPassword/modifyPassword",
+    "pages/message/message",
+    "pages/order/order",
+    "pages/customer/customer",
+    "pages/customerDetail/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1E72DA",
+    "navigationBarTitleText": "车贷系统",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#1E72DA",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "/images/tabbar/bar-home.png",
+        "selectedIconPath": "/images/tabbar/bar-home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "/images/tabbar/bar-order.png",
+        "selectedIconPath": "/images/tabbar/bar-order-active.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "/images/tabbar/bar-message.png",
+        "selectedIconPath": "/images/tabbar/bar-message-active.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "/images/tabbar/bar-mine.png",
+        "selectedIconPath": "/images/tabbar/bar-mine-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-notify": "../components/vant-weapp/dist/notify/index",
+    "van-field": "../components/vant-weapp/dist/field/index",
+    "van-icon": "../components/vant-weapp/dist/icon/index",
+    "van-toast": "../components/vant-weapp/dist/toast/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

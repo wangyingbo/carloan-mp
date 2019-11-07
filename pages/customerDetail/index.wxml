@@ -1,0 +1,18 @@
+<view>
+  <scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+    <view class="cu-item {{item.key==TabCur?' tab-color cur':''}}" wx:for="{{tabConfig}}" wx:key bindtap='tabSelect' data-id="{{item.key}}">
+      {{item.name}}
+    </view>
+  </scroll-view>
+  <view class="cu-card bg-white card-wrap">
+    <view class="cu-bar bg-white solid-bottom">
+      <view class='action'>
+        <text class='icon-title text-blue '></text>身份信息
+      </view>
+    </view>
+    <view class="grid col-3 grid-square flex-sub img-wrap">
+      <view wx:for="{{customerDetail.customerInfo ? customerDetail.customerInfo.certAttachments : []}}" class="padding-xs bg-img img-item" style="background-image:url({{item.presignedUrl}});">
+      </view>
+    </view>
+  </view>
+</view>

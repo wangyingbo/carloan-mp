@@ -1,0 +1,21 @@
+<!--pages/login/login.wxml-->
+<view class='login-warp  text-center'>
+  <image class='login-logo' src='/images/logo-login.png'></image>
+  <view class='form-wrap'>
+    <form bindsubmit="login" class='form'>
+      <view class="cu-form-group margin-top form-item">
+        <view class='title'>账号</view>
+        <input placeholder="请输入账号" class='radius' name='loginAccount'></input>
+      </view>
+      <view class="cu-form-group margin-top form-item form-have-bottom-border">
+        <view class='title'>密码</view>
+        <input placeholder="请输入密码" type="password" class='radius' name='password'></input>
+      </view>
+      <view>
+        <button class='cu-btn block bg-blue margin-tb-sm lg login-btn' form-type='submit' loading="{{loading}}">登录
+        </button>
+      </view>
+    </form>
+  </view>
+  <van-notify id="van-notify"/>
+</view>
